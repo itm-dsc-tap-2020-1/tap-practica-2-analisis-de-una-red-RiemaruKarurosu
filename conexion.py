@@ -1,5 +1,5 @@
 import os
-red= "200.33.71.0/24"
+red= "200.33.171.0"
 hostname = red
 
 respuesta = os.system("ping -c 1 " + hostname)
@@ -11,7 +11,6 @@ else:
 
 #deteccion de computadoras
 
-red= "200.33.71.0/24"
 os.system("nmap -sP "+red)
 
 #deteccion de puertos abiertos
